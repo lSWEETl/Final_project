@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "./styles.css"
+import { BrowserRouter} from "react-router-dom";
 
 <meta name="description" content="Best restaurant in town"/>;
 <meta name="og:title" content="Little Lemon"/>;
@@ -13,7 +14,9 @@ import "./styles.css"
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
     <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
