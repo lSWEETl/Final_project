@@ -1,7 +1,8 @@
 import Navbar from "./Navbar"
 import About from "./pages/About"
-import Home from "./pages/Home"
+import Header from "./Header"
 import Login from "./pages/Login"
+import Main from "./Main"
 import Menu from "./pages/Menu"
 import Orderonline from "./pages/Orderonline"
 import Reservations from "./pages/Reservations"
@@ -13,13 +14,14 @@ function App() {
   <>
   <Navbar />
   <Routes>
-    <Route path="/" element={<Home />} />
+    <Route path="/" element={<Header />} />
     <Route path="/about" element={<About />} />
     <Route path="/login" element={<Login />} />
     <Route path="/menu" element={<Menu />} />
     <Route path="/orderonline" element={<Orderonline />} />
     <Route path="/reservations" element={<Reservations />} />
   </Routes>
+  <Main />
   </>
   )
 }

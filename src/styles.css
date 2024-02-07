@@ -10,10 +10,9 @@ body {
     background-color: white;
     color:black;
     display:flex;
-    justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     gap: 2rem;
-    padding: 0 1rem;
+    padding: 0 20rem;
 }
 
 .nav img {
@@ -36,6 +35,7 @@ body {
     display: flex;
     align-items: center;
     padding: .25rem;
+    white-space: pre-wrap;
 }
 
 .nav li.active {
