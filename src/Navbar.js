@@ -13,6 +13,11 @@ export default function Navbar (){
             <CustomLink to="/orderonline">Order Online</CustomLink>
             <CustomLink to="/login">Login</CustomLink>
         </ul>
+        {/*<div className="menu-icon">
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+        </div>*/}
     </nav>
 }
 

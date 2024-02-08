@@ -1,5 +1,5 @@
 import React from "react"
-import HeadlineCards from "./pages/HeadlineCards"
+import HeadlineCards from "./HeadlineCards"
 
 export default function Main() {
     return (
