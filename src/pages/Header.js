@@ -9,7 +9,7 @@ export default function Header() {
             <div className="banner">
                 <h2>Little Lemon</h2>
                 <h3>Chicago</h3>
-                <p >We are a family owned Mediterranean restaurant, focused on traditional recipes served with a moder twist.</p>
+                <p >We are very proud about our traditional recipes! <br></br>Come and try it!</p>
                 <Link to="/Reservations"><button aria-label="On Click">Reserve a Table</button></Link>
             </div>
             <div className="banner-img">

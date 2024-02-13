@@ -131,7 +131,7 @@ body{
   }
   
   
-  form, .comfirm{
+  form, .confirm{
     padding: 10px 13%;
   }
   
@@ -162,7 +162,7 @@ body{
   
   }
   
-  .comfirm span{
+  .confirm span{
     color: blue;
   }
   
@@ -184,6 +184,11 @@ body{
     align-items: center;
     flex-wrap: wrap;
   }
+  .menu-header h2 {
+      color: #495e57;
+      font-size: 40px;
+  }
+
   .cards{
     margin-top: 30px;
     display: flex;
@@ -288,7 +293,7 @@ body{
       display: none;
     }
   
-    form, .comfirm{
+    form, .confirm{
       padding: 10px 8%;
     }
   

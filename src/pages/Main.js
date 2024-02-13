@@ -45,7 +45,7 @@ const Main = () => {
     const navigate = useNavigate();
     function submitForm (formData){
         if(submitAPI(formData)){
-            navigate("/confirmed");
+            navigate("./confirmed");
         }
     }
     return (
@@ -54,7 +54,6 @@ const Main = () => {
                 <Route path="/" element={<Header/>}/>
                 <Route path="/Reservations" element={<Reservations availableTimes={state} dispatch={dispatch} submitForm={submitForm}/>}/>
                 <Route path="/confirmed" element={<ConfirmedBooking/>}/>
-
             </Routes>
         </main>
     );
