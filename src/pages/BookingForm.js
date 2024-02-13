@@ -1,6 +1,6 @@
-import React, {useState} from "react"
+import React, { useState } from "react"
 
-const BookingForm = () => {
+const BookingForm = (props) => {
     const [date, setDate] = useState("");
     const [times, setTimes] = useState("");
     const [guests, setGuests] = useState("");
@@ -8,7 +8,7 @@ const BookingForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.SubmitForm(e);
+        props.submitForm(e);
     }
 
     const handleChange = (e) => {
@@ -60,4 +60,4 @@ const BookingForm = () => {
     );
 };
 
-export default BookingFrom
+export default BookingForm

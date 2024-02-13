@@ -1,5 +1,10 @@
-export default function Reservations() {
-    return (
-      <h1>Reservations</h1>
-        )
-}
+import React from "react"
+import BookingForm from "./BookingForm"
+
+const Reservations = (props) => {
+    return(
+        <BookingForm availableTimes={props.availableTimes} dispatch={props.dispatch} submitForm={props.submitForm}/>
+    );
+};
+
+export default Reservations;

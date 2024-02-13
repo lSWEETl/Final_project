@@ -5,56 +5,28 @@ import LemonDessert from "../images/LemonDessert.jpg"
 
 
 
-const HeadlineCards = () => {
-  const menuItem = [
+const HeadlineCards = [
     {
-      text: "Greek Salad",
+      id: 1,
+      title: "Greek Salad",
       price: "$12.99",
-      subtitle: "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ",
       image: GreekSalad,
+      description: "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons. ",
     },
     {
-      text: "Bruchetta",
+      id: 2,
+      title: "Bruchetta",
       price: "$5.99",
-      subtitle: "subtitle",
       image: Bruchetta,
+      description: "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
     },
     {
-      text: "Lemon Dessert",
+      id: 3,
+      title: "Lemon Dessert",
       price: "$5.00",
-      subtitle: "subtitle",
       image: LemonDessert,
+      description: "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
     },
   ];
-
-  return (
-    <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gridGap: 20, color: "#2f4f4f" }}>
-      {/* Card */}
-
-      {menuItem.map(({ text, price, subtitle, image }, index) => {
-        return (
-          <div key={index} className="rounded-xl relative">
-            {/* Overlay */}
-            <img
-              className="max-h-[160px]  md:max-h-[200px] w-full object-cover rounded-xl"
-              src={image}
-              alt="/"
-              style={{width: 200,
-                height: 200,
-                borderRadius: '2rem',}}
-            />
-            <div className="absolute for w-full h-full bg-black/50 rounded-xl text-white">
-              <p className="font-bold text-2xl px-2 pt-4">{text} {price} </p>
-              <p className="px-2">{subtitle}</p>
-              <button className="border rounded-xl px-5 py-1 border-white bg-white text-black hover:bg-black/50 hover:text-white border-none mx-2 absolute bottom-4">
-                order
-              </button>
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
-};
 
 export default HeadlineCards;
